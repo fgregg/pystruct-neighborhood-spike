@@ -27,11 +27,5 @@ X = ((X, E),)
 model = GraphCRF(n_features=1, n_states=2, inference_method='ad3')
 svm = OneSlackSSVM(model, verbose=1)
 
-print "hello"
-print X
-print zip(X, Y)[0]
-
-#print X[0].shape
-#print Y.shape
 svm.fit(X, Y)
                          
