@@ -19,3 +19,57 @@ However, as you can see in the figure below, this is not working very well.
 I believe that this is, in part, because of the sharpness of the default hamming loss in pystruct. I would like to use a
 loss function that gave some credit for partitions that were 'close' to training data. I'm not quite decided on how
 to best operationalize closeness.
+
+## Visualizations of features
+### Elementary School Attendance Areas: 
+* Blue -- border of attendance area
+* Green -- border of neighborhood
+* Cyan -- overlap of feature and border
+ 
+
+![Elementary Schools](elementary_schools.png)
+
+### High School Attendance Areas: 
+* Blue -- border of attendance area
+* Green -- border of neighborhood
+* Cyan -- overlap of feature and border
+ 
+
+![High Schools](high_schools.png)
+
+### Major Streets: 
+* Blue -- Major street
+* Green -- border of neighborhood
+* Cyan -- overlap of feature and border
+ 
+
+![Major Streets](major_streets.png)
+ 
+### River: 
+* Blue -- River
+* Green -- border of neighborhood
+* Cyan -- overlap of feature and border
+ 
+
+![River](water.png)
+
+### Railroad: 
+* Blue -- Rail Line
+* Green -- border of neighborhood
+* Cyan -- overlap of feature and border
+ 
+
+![Railroad](railroad.png)
+
+
+### Land use zoning 
+* Blue -- Edge of land use zone (commerical, industrial, residential)
+* Green -- border of neighborhood
+* Cyan -- overlap of feature and border
+ 
+
+
+![Zoning](zoning.png)
+
+
+ 
