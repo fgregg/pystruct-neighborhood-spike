@@ -3,18 +3,18 @@ I have been collecting data from Craiglists about which neighborhood real estate
 these data, do some processing, and identify different neighborhood areas. I then find the borders between these areas
 and that is my target data. (the 'pixels' in this case are populated US Census blocks). 
 
-![Target borders](target.png)
+![Target borders](images/target.png)
 
-Ultimately, this is a vector that has the length of the number of edges between adjoining census blocks. [This vector](data/border.csv) 
+Ultimately, this is a vector that has the length of the number of edges between adjoining census blocks. [This vector](images/data/border.csv) 
 takes a value of 1 if this edge is a border between two different neighborhoods and a 0 otherwise. 
 
-I then calculated a number feaures about these edges: do they intersect a [railroad line](data/rail_intersects.csv), what is the [difference in 
-the racial distribution of the blocks](data/js_race.csv), etc. I then use pystruct to try to build a model of where these borders will occur
+I then calculated a number feaures about these edges: do they intersect a [railroad line](images/data/rail_intersects.csv), what is the [difference in 
+the racial distribution of the blocks](images/data/js_race.csv), etc. I then use pystruct to try to build a model of where these borders will occur
 based on these features and pairwise connections between edges to encourage longer lines. 
 
 However, as you can see in the figure below, this is not working very well. 
 
-![Current Output](predicted_borders.png)
+![Current Output](images/predicted_borders.png)
 
 I believe that this is, in part, because of the sharpness of the default hamming loss in pystruct. I would like to use a
 loss function that gave some credit for partitions that were 'close' to training data. I'm not quite decided on how
@@ -27,7 +27,7 @@ to best operationalize closeness.
 * Cyan -- overlap of feature and border
  
 
-![Elementary Schools](elementary_schools.png)
+![Elementary Schools](images/elementary_schools.png)
 
 ### High School Attendance Areas: 
 * Blue -- border of attendance area
@@ -35,7 +35,7 @@ to best operationalize closeness.
 * Cyan -- overlap of feature and border
  
 
-![High Schools](high_schools.png)
+![High Schools](images/high_schools.png)
 
 ### Major Streets: 
 * Blue -- Major street
@@ -43,7 +43,7 @@ to best operationalize closeness.
 * Cyan -- overlap of feature and border
  
 
-![Major Streets](major_streets.png)
+![Major Streets](images/major_streets.png)
  
 ### River: 
 * Blue -- River
@@ -51,7 +51,7 @@ to best operationalize closeness.
 * Cyan -- overlap of feature and border
  
 
-![River](water.png)
+![River](images/water.png)
 
 ### Railroad: 
 * Blue -- Rail Line
@@ -59,7 +59,7 @@ to best operationalize closeness.
 * Cyan -- overlap of feature and border
  
 
-![Railroad](railroad.png)
+![Railroad](images/railroad.png)
 
 
 ### Land use zoning 
@@ -69,7 +69,7 @@ to best operationalize closeness.
  
 
 
-![Zoning](zoning.png)
+![Zoning](images/zoning.png)
 
 ### Race 
 Low--tan to High--red
@@ -78,19 +78,19 @@ Distance is [Jensen Shannon Divergence](http://en.wikipedia.org/wiki/Jensen%E2%8
 
 Percent Hispanic
 
-![Hispanic](hispanic.png) 
+![Hispanic](images/hispanic.png) 
 
 Percent Black
 
-![Black](black.png)
+![Black](images/black.png)
 
 Percent White
 
-![White](white.png)
+![White](images/white.png)
 
 Percent Asian
 
-![Asian](asian.png)
+![Asian](images/asian.png)
 
 ### Age
 Low--tan to High--red
@@ -100,27 +100,27 @@ Distance is [Jensen Shannon Divergence](http://en.wikipedia.org/wiki/Jensen%E2%8
 
 Percent Preschool Age
 
-![Preschool](preschool.png) 
+![Preschool](images/preschool.png) 
 
 Percent School Age
 
-![School](school.png)
+![School](images/school.png)
 
 Percent College Age
 
-![College](college.png)
+![College](images/college.png)
 
 Percent Young Adult
 
-![Young Adult](young_adult.png)
+![Young Adult](images/young_adult.png)
 
 Percent Middle Age
 
-![Middle Age](middle_age.png)
+![Middle Age](images/middle_age.png)
 
 Percent Retirement Age
 
-![Retirement Age](retired.png)
+![Retirement Age](images/retired.png)
 
 ### Family Type
 Low--tan to High--red
@@ -130,26 +130,26 @@ Distance is [Jensen Shannon Divergence](http://en.wikipedia.org/wiki/Jensen%E2%8
 
 Percent Husband and Wife
 
-![Husband and Wife](husband_wife.png) 
+![Husband and Wife](images/husband_wife.png) 
 
 Percent Single Dad
 
-![Single Dad](single_dad.png) 
+![Single Dad](images/single_dad.png) 
 
 Percent Single Mom
 
-![Single Mom](single_mom.png) 
+![Single Mom](images/single_mom.png) 
 
 Percent Live alone
 
-![Single Mom](living_along.png) 
+![Single Mom](images/living_along.png) 
 
 Percent Living with Roommates
 
-![Single Mom](roommates.png) 
+![Single Mom](images/roommates.png) 
 
 ### Block Orientation
 
 Distance is absolute difference in angles (radians)
 
-![Block Orientation](block_orientation.png) 
+![Block Orientation](images/block_orientation.png) 
