@@ -71,5 +71,85 @@ to best operationalize closeness.
 
 ![Zoning](zoning.png)
 
+### Race 
+Low--tan to High--red
 
- 
+Distance is [Jensen Shannon Divergence](http://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence)
+
+Percent Hispanic
+
+![Hispanic](hispanic.png) 
+
+Percent Black
+
+![Black](black.png)
+
+Percent White
+
+![White](white.png)
+
+Percent Asian
+
+![Asian](asian.png)
+
+### Age
+Low--tan to High--red
+
+Distance is [Jensen Shannon Divergence](http://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence)
+
+
+Percent Preschool Age
+
+![Preschool](preschool.png) 
+
+Percent School Age
+
+![School](school.png)
+
+Percent College Age
+
+![College](college.png)
+
+Percent Young Adult
+
+![Young Adult](young_adult.png)
+
+Percent Middle Age
+
+![Middle Age](middle_age.png)
+
+Percent Retirement Age
+
+![Retirement Age](retired.png)
+
+### Family Type
+Low--tan to High--red
+
+Distance is [Jensen Shannon Divergence](http://en.wikipedia.org/wiki/Jensen%E2%80%93Shannon_divergence)
+
+
+Percent Husband and Wife
+
+![Husband and Wife](husband_wife.png) 
+
+Percent Single Dad
+
+![Single Dad](single_dad.png) 
+
+Percent Single Mom
+
+![Single Mom](single_mom.png) 
+
+Percent Live alone
+
+![Single Mom](living_along.png) 
+
+Percent Living with Roommates
+
+![Single Mom](roommates.png) 
+
+### Block Orientation
+
+Distance is absolute difference in angles (radians)
+
+![Block Orientation](block_orientation.png) 
