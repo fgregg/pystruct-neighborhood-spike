@@ -13,13 +13,17 @@ the racial distribution of the blocks](images/data/js_race.csv), etc. I then use
 of the probability that an edge between two census blocks will be a border between neighborhoods. Right now,
 the probabilty of an edge being a border is treated as if it were independent of other edges being borders. 
 
+### Current model predictions
+
 The below image shows the predicted values from the model. The bright red lines are edges that have an estimated probability
 of being a neighborhood boundary over 0.4. The darker red lines have an estimated probability of being borders between
 0.3 and 0.4. 
 
 ![Current Output](images/logistic.png)
 
-A few more notes about the model: using dummy variables, I'm basically specifying two different models, one for edges
+#### Nested models
+
+Using dummy variables, I'm conceptually estimating two different models, one for edges
 between uninhabited census blocks where I use physical and administrative features and a richer model for edges
 between inhabited census blocks, where I use census features.
 
@@ -45,9 +49,11 @@ sufficent_pop:high_school        0.10536    0.32713   0.322  0.74740
 sufficent_pop:block_angle        0.02003    0.07438   0.269  0.78772 
 ```
 
-Here's the model: 
+#### Weighting
 
-Lo
+Because the vast majority of edges between blocks are not borders between neighborhoods, I can improve model
+performance by upweighting rarer positive examples. I choose this weight very naively now, but will use some form 
+of cross validation later.
 
 
 ## Visualizations of features
