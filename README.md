@@ -9,7 +9,7 @@ Ultimately, this is a vector that has the length of the number of edges between 
 takes a value of 1 if this edge is a border between two different neighborhoods and a 0 otherwise. 
 
 I then calculated a number feaures about these edges: do they intersect a [railroad line](images/data/rail_intersects.csv), what is the [difference in 
-the racial distribution of the blocks](images/data/js_race.csv), etc. I then use weighted logistic regression to build a model
+the racial distribution of the blocks](images/data/js_race.csv), etc. I then use [weighted logistic regression](logistic.R) to build a model
 of the probability that an edge between two census blocks will be a border between neighborhoods. Right now,
 the probabilty of an edge being a border is treated as if it were independent of other edges being borders. 
 
