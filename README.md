@@ -58,7 +58,7 @@ of cross validation later.
 ### Segmentation
 This model leads to the following segmentation with Felzenszwalb and Huttenlocher's algorithm (scale = 1). 
 
-![Segmentation](images/segmentation.png)
+![Segmentation](images/segments.png)
 
 
 
