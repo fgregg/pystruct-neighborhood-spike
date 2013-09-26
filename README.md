@@ -55,6 +55,13 @@ Because the vast majority of edges between blocks are not borders between neighb
 performance by upweighting rarer positive examples. I choose this weight very naively now, but will use some form 
 of cross validation later.
 
+### Segmentation
+This model leads to the following segmentation with Felzenszwalb and Huttenlocher's algorithm (scale = 1). 
+
+![Segmentation](images/segmentation.png)
+
+
+
 
 ## Visualizations of features
 ### Elementary School Attendance Areas: 
